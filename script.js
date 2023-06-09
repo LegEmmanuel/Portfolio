@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     var audio = new Audio('moveyourbody.mp3');
     var image = document.querySelector('.img-fluid');
+    
+
+    
 
     function playMusic() {
         audio.play();
@@ -13,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var playButton = document.getElementById('playButton');
     playButton.addEventListener('click', playMusic);
+    
 
     function changeImage() {
         image.setAttribute('src', 'troll.gif');
@@ -28,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
         openTermsModal();
     });
+
   
     function openTermsModal() {
         var modal = document.createElement('div');
